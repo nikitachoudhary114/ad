@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvResult" type="id" />
+    <item name="btnAlert" type="id" />
+    <item name="btnConfirm" type="id" />
+    <item name="btnInput" type="id" />
+    <item name="btnSingle" type="id" />
+    <item name="btnMulti" type="id" />
+    <item name="btnProgress" type="id" />
+    <item name="btnDate" type="id" />
+    <item name="btnTime" type="id" />
+    <item name="btnPopup" type="id" />
+    <item name="btnContext" type="id" />
+</resources>

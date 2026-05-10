@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- ✅ Add this Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3F51B5"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Dialog &amp; Menu App" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F4FF">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- result banner -->
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Result will appear here…"
+                android:textSize="14sp"
+                android:textColor="#1B5E20"
+                android:background="#C8E6C9"
+                android:padding="12dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- DIALOGS label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DIALOGS"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#7986CB"
+                android:layout_marginBottom="8dp"/>
+
+            <Button android:id="@+id/btnAlert"    android:layout_width="match_parent" android:layout_height="48dp" android:text="1. Alert Dialog"              android:backgroundTint="#3F51B5" android:layout_marginBottom="10dp"/>
+            <Button android:id="@+id/btnConfirm"  android:layout_width="match_parent" android:layout_height="48dp" android:text="2. Confirmation Dialog"        android:backgroundTint="#3F51B5" android:layout_marginBottom="10dp"/>
+            <Button android:id="@+id/btnInput"    android:layout_width="match_parent" android:layout_height="48dp" android:text="3. Input Dialog"               android:backgroundTint="#3F51B5" android:layout_marginBottom="10dp"/>
+            <Button android:id="@+id/btnSingle"   android:layout_width="match_parent" android:layout_height="48dp" android:text="4. Single-Choice Dialog"       android:backgroundTint="#3F51B5" android:layout_marginBottom="10dp"/>
+            <Button android:id="@+id/btnMulti"    android:layout_width="match_parent" android:layout_height="48dp" android:text="5. Multi-Choice Dialog"        android:backgroundTint="#3F51B5" android:layout_marginBottom="10dp"/>
+            <Button android:id="@+id/btnProgress" android:layout_width="match_parent" android:layout_height="48dp" android:text="6. Progress Dialog"            android:backgroundTint="#3F51B5" android:layout_marginBottom="10dp"/>
+            <Button android:id="@+id/btnDate"     android:layout_width="match_parent" android:layout_height="48dp" android:text="7. Date Picker Dialog"         android:backgroundTint="#3F51B5" android:layout_marginBottom="10dp"/>
+            <Button android:id="@+id/btnTime"     android:layout_width="match_parent" android:layout_height="48dp" android:text="8. Time Picker Dialog"         android:backgroundTint="#3F51B5" android:layout_marginBottom="20dp"/>
+
+            <!-- MENUS label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MENUS"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#7986CB"
+                android:layout_marginBottom="8dp"/>
+
+            <Button android:id="@+id/btnPopup"   android:layout_width="match_parent" android:layout_height="48dp" android:text="9. Popup Menu"                  android:backgroundTint="#E91E63" android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. Options Menu — tap ⋮ in the Toolbar above"
+                android:textSize="13sp"
+                android:textColor="#AD1457"
+                android:background="#FCE4EC"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button android:id="@+id/btnContext" android:layout_width="match_parent" android:layout_height="48dp" android:text="11. Context Menu (long-press)"   android:backgroundTint="#E91E63" android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
